@@ -6,17 +6,18 @@
   <title>Santhosh Kumar Nanubala | AI / Data / AWS Portfolio</title>
   <meta
     name="description"
-    content="Multi-blog AI portfolio site with AWS architecture diagrams, code examples, and generative AI articles."
+    content="AI, Data, and AWS portfolio with blog posts, architecture diagrams, and code examples."
   />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
+  <header class="site-header">
     <div class="container header-inner">
-      <div>
-        <div class="brand-small">Santhosh Kumar Nanubala</div>
-        <h1 class="brand-title">AI / Data / AWS Portfolio</h1>
+      <div class="brand">
+        <div class="brand-subtitle">Santhosh Kumar Nanubala</div>
+        <h1>AI / Data / AWS Portfolio</h1>
       </div>
+
       <nav class="nav">
         <a href="#home">Home</a>
         <a href="#blog">Blog</a>
@@ -28,88 +29,91 @@
 
   <main class="container">
     <section id="home" class="hero">
-      <div class="card hero-card">
-        <div class="pill">GitHub Pages-ready static portfolio</div>
-        <h2>Documenting practical AI, analytics, cloud, and supply chain ideas.</h2>
+      <div class="hero-content">
+        <span class="badge">GitHub Pages portfolio</span>
+        <h2>Documenting practical work in AI, analytics, cloud, and supply chain.</h2>
         <p>
-          This portfolio site combines blog posts, AI architecture diagrams, AWS service diagrams,
-          code examples, and recruiter-friendly technical writeups in a clean static website you
-          can host directly on GitHub Pages.
+          This site brings together technical blog posts, AWS architecture thinking,
+          code examples, and business-focused AI content in a clean format.
         </p>
-        <div class="tags">
-          <span class="tag">Generative AI</span>
-          <span class="tag">AWS</span>
-          <span class="tag">SageMaker</span>
-          <span class="tag">Bedrock</span>
-          <span class="tag">Python</span>
-          <span class="tag">Supply Chain</span>
-          <span class="tag">Analytics</span>
+
+        <div class="tag-list">
+          <span>Generative AI</span>
+          <span>AWS</span>
+          <span>SageMaker</span>
+          <span>Bedrock</span>
+          <span>Python</span>
+          <span>Supply Chain</span>
+          <span>Analytics</span>
         </div>
       </div>
 
-      <div class="metric-stack">
-        <div class="card metric-card">
-          <div class="metric-label">Blog Posts</div>
-          <div class="metric-value">03</div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-label">Blog posts</div>
+          <div class="stat-value">3</div>
         </div>
-        <div class="card metric-card">
-          <div class="metric-label">Architecture Diagrams</div>
-          <div class="metric-value">02</div>
+        <div class="stat-card">
+          <div class="stat-label">Architecture diagrams</div>
+          <div class="stat-value">2</div>
         </div>
-        <div class="card metric-card">
-          <div class="metric-label">Code Samples</div>
-          <div class="metric-value">04</div>
+        <div class="stat-card">
+          <div class="stat-label">Code samples</div>
+          <div class="stat-value">4</div>
         </div>
       </div>
     </section>
 
-    <section id="blog">
-      <div class="section-kicker">Blog</div>
+    <section id="blog" class="section">
+      <div class="section-label">Blog</div>
       <h2 class="section-title">Featured posts</h2>
 
       <div class="blog-layout">
-        <aside class="post-list" id="post-list"></aside>
+        <aside id="post-list" class="post-list"></aside>
 
-        <article class="card article">
-          <div id="article-category" class="post-category"></div>
+        <article class="article-card">
+          <div id="article-category" class="article-category"></div>
           <h3 id="article-title" class="article-title"></h3>
-          <div id="article-meta" class="post-meta"></div>
+          <div id="article-meta" class="article-meta"></div>
           <div id="article-content" class="article-content"></div>
         </article>
       </div>
     </section>
 
-    <section id="projects">
-      <div class="section-kicker">Projects</div>
+    <section id="projects" class="section">
+      <div class="section-label">Projects</div>
       <h2 class="section-title">Focus areas</h2>
-      <div class="projects-grid">
-        <div class="card project-card">
-          <h4>Generative AI on AWS</h4>
-          <p>Architecture, service selection, foundation model access, and deployment thinking for real business use cases.</p>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Generative AI on AWS</h3>
+          <p>Architecture, service selection, foundation model access, and deployment thinking for business use cases.</p>
         </div>
-        <div class="card project-card">
-          <h4>Analytics + BI</h4>
-          <p>Turning pipelines and dashboards into business-facing narratives, decision support, and scalable reporting.</p>
+        <div class="project-card">
+          <h3>Analytics + BI</h3>
+          <p>Turning dashboards, pipelines, and metrics into business-facing narratives and decision support.</p>
         </div>
-        <div class="card project-card">
-          <h4>Supply Chain Intelligence</h4>
-          <p>Forecasting, replenishment, inventory reasoning, and AI-augmented operational insights.</p>
+        <div class="project-card">
+          <h3>Supply Chain Intelligence</h3>
+          <p>Inventory, forecasting, replenishment, and AI-supported operational insights.</p>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="card contact">
-      <div class="section-kicker contact-kicker">Contact</div>
-      <h2 class="section-title contact-title">Open to AI, data, analytics, and AWS-focused opportunities.</h2>
+    <section id="contact" class="contact-card">
+      <div class="section-label section-label-light">Contact</div>
+      <h2>Open to AI, data, analytics, and AWS-focused opportunities.</h2>
       <p>
         LinkedIn:
-        <a href="https://www.linkedin.com/in/santhoshkumarnanubala/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/santhoshkumarnanubala/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           linkedin.com/in/santhoshkumarnanubala
         </a>
       </p>
     </section>
-
-    <div class="footer"></div>
   </main>
 
   <script src="script.js"></script>

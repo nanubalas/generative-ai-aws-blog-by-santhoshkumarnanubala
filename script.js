@@ -13,20 +13,19 @@ const posts = [
       <p>On AWS, this becomes especially powerful because model access, training workflows, infrastructure scaling, deployment, and monitoring can all be handled within one ecosystem.</p>
 
       <h2>Premium AI Architecture Diagram</h2>
-      <p>This architecture shows a cleaner GenAI application flow on AWS: users interact with an application layer, requests move through orchestration and retrieval, and the application uses a foundation model supported by enterprise data and knowledge sources.</p>
+      <p>This version fixes the spacing, icon collisions, arrow weight, lower-band grouping, and visual balance so the architecture reads more like a polished cloud design and less like a cramped blog sketch.</p>
 
-      <div class="diagram-shell" style="padding:28px;background:linear-gradient(180deg,#eef4fb 0%,#f8fafc 100%);">
-        <svg viewBox="0 0 1200 560" style="width:100%;min-width:1000px;height:auto;display:block;">
-          
-          <!-- Definitions -->
+      <div class="diagram-shell" style="padding:28px;background:linear-gradient(180deg,#eef3f8 0%,#f8fafc 100%);">
+        <svg viewBox="0 0 1200 520" style="width:100%;min-width:1000px;height:auto;display:block;">
+
           <defs>
             <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
-              <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.08"/>
+              <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.08"/>
             </filter>
 
             <linearGradient id="boxFill" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stop-color="#ffffff"/>
-              <stop offset="100%" stop-color="#f8fafc"/>
+              <stop offset="100%" stop-color="#fbfdff"/>
             </linearGradient>
 
             <linearGradient id="awsFill" x1="0" y1="0" x2="1" y2="1">
@@ -34,120 +33,123 @@ const posts = [
               <stop offset="100%" stop-color="#ffedd5"/>
             </linearGradient>
 
-            <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
-              <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"></path>
+            <marker id="arrowHead" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 z" fill="#8ea0b8"></path>
             </marker>
           </defs>
 
-          <!-- Main canvas -->
-          <rect x="18" y="18" rx="30" ry="30" width="1164" height="524" fill="#eaf1f8" stroke="#d7e2ee"/>
+          <!-- Canvas -->
+          <rect x="14" y="14" rx="30" ry="30" width="1172" height="492" fill="#edf3f8" stroke="#d7e2ee"/>
 
           <!-- Title -->
-          <text x="600" y="62" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a">
+          <text x="600" y="48" text-anchor="middle" font-size="22" font-weight="700" fill="#0f172a">
             Generative AI Application Architecture on AWS
           </text>
-          <text x="600" y="90" text-anchor="middle" font-size="13" fill="#475569">
+          <text x="600" y="74" text-anchor="middle" font-size="13" fill="#52637a">
             Retrieval-augmented orchestration with Bedrock, enterprise data, and AWS-managed infrastructure
           </text>
 
           <!-- Top row -->
           <!-- Users -->
           <g filter="url(#shadowSoft)">
-            <rect x="70" y="170" rx="24" ry="24" width="180" height="92" fill="url(#boxFill)" stroke="#cbd5e1" stroke-width="2"/>
-            <circle cx="115" cy="202" r="16" fill="#eff6ff" stroke="#bfdbfe"/>
-            <path d="M108 205 q7-16 14 0" fill="none" stroke="#2563eb" stroke-width="2"/>
-            <circle cx="115" cy="197" r="4" fill="#2563eb"/>
-            <text x="160" y="204" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Users</text>
-            <text x="160" y="228" text-anchor="middle" font-size="12" fill="#475569">Web · Mobile · Internal Teams</text>
+            <rect x="56" y="124" rx="24" ry="24" width="190" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"/>
+            <circle cx="104" cy="161" r="18" fill="#eef6ff" stroke="#bfd8ff"/>
+            <circle cx="104" cy="155" r="4" fill="#2563eb"/>
+            <path d="M96 170 q8-14 16 0" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+            <text x="156" y="166" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Users</text>
+            <text x="156" y="190" text-anchor="middle" font-size="12" fill="#52637a">Web · Mobile · Internal Teams</text>
           </g>
 
-          <!-- App Layer -->
+          <!-- Application Layer -->
           <g filter="url(#shadowSoft)">
-            <rect x="310" y="170" rx="24" ry="24" width="210" height="92" fill="url(#boxFill)" stroke="#cbd5e1" stroke-width="2"/>
-            <rect x="336" y="188" rx="10" ry="10" width="32" height="24" fill="#ecfeff" stroke="#a5f3fc"/>
-            <rect x="342" y="194" rx="4" ry="4" width="20" height="12" fill="#0891b2"/>
-            <text x="420" y="204" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Application Layer</text>
-            <text x="420" y="228" text-anchor="middle" font-size="12" fill="#475569">Frontend · API · Auth · Business Logic</text>
+            <rect x="300" y="124" rx="24" ry="24" width="220" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"/>
+            <rect x="334" y="144" rx="10" ry="10" width="36" height="28" fill="#ecfeff" stroke="#a5f3fc"/>
+            <rect x="344" y="151" rx="4" ry="4" width="16" height="14" fill="#0891b2"/>
+            <text x="420" y="164" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Application Layer</text>
+            <text x="420" y="190" text-anchor="middle" font-size="12" fill="#52637a">Frontend · API · Auth · Business Logic</text>
           </g>
 
-          <!-- Orchestration -->
+          <!-- Prompt / Orchestration -->
           <g filter="url(#shadowSoft)">
-            <rect x="580" y="170" rx="24" ry="24" width="270" height="92" fill="url(#boxFill)" stroke="#cbd5e1" stroke-width="2"/>
-            <circle cx="614" cy="200" r="15" fill="#fff7ed" stroke="#fdba74"/>
-            <path d="M606 200 h16 M614 192 v16" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
-            <text x="715" y="202" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Prompt / Orchestration</text>
-            <text x="715" y="228" text-anchor="middle" font-size="12" fill="#475569">Prompt Routing · Guardrails · RAG · Tools</text>
+            <rect x="574" y="124" rx="24" ry="24" width="282" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"/>
+            <circle cx="620" cy="160" r="17" fill="#fff7ed" stroke="#fdba74"/>
+            <path d="M612 160 h16 M620 152 v16" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
+            <text x="724" y="162" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Prompt / Orchestration</text>
+            <text x="724" y="189" text-anchor="middle" font-size="12" fill="#52637a">Prompt Routing · Guardrails · RAG · Tools</text>
           </g>
 
-          <!-- FM -->
+          <!-- Foundation Model -->
           <g filter="url(#shadowSoft)">
-            <rect x="910" y="170" rx="24" ry="24" width="220" height="92" fill="url(#boxFill)" stroke="#cbd5e1" stroke-width="2"/>
-            <rect x="938" y="186" rx="10" ry="10" width="36" height="28" fill="#f5f3ff" stroke="#ddd6fe"/>
-            <path d="M946 208 L954 194 L962 208 L970 194" stroke="#7c3aed" stroke-width="2" fill="none"/>
-            <text x="1020" y="202" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Foundation Model</text>
-            <text x="1020" y="228" text-anchor="middle" font-size="12" fill="#475569">Amazon Bedrock · FM APIs</text>
+            <rect x="910" y="124" rx="24" ry="24" width="232" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"/>
+            <rect x="944" y="143" rx="10" ry="10" width="38" height="30" fill="#f5f3ff" stroke="#ddd6fe"/>
+            <path d="M952 166 L959 150 L966 166 L973 150" stroke="#7c3aed" stroke-width="2" fill="none"/>
+            <text x="1036" y="162" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Foundation Model</text>
+            <text x="1036" y="189" text-anchor="middle" font-size="12" fill="#52637a">Amazon Bedrock · FM APIs</text>
           </g>
 
-          <!-- Arrows top row -->
-          <line x1="250" y1="216" x2="310" y2="216" stroke="#94a3b8" stroke-width="4" marker-end="url(#arrowHead)"/>
-          <line x1="520" y1="216" x2="580" y2="216" stroke="#94a3b8" stroke-width="4" marker-end="url(#arrowHead)"/>
-          <line x1="850" y1="216" x2="910" y2="216" stroke="#94a3b8" stroke-width="4" marker-end="url(#arrowHead)"/>
+          <!-- Top arrows -->
+          <line x1="246" y1="170" x2="300" y2="170" stroke="#8ea0b8" stroke-width="3" marker-end="url(#arrowHead)"/>
+          <line x1="520" y1="170" x2="574" y2="170" stroke="#8ea0b8" stroke-width="3" marker-end="url(#arrowHead)"/>
+          <line x1="856" y1="170" x2="910" y2="170" stroke="#8ea0b8" stroke-width="3" marker-end="url(#arrowHead)"/>
 
           <!-- Lower row -->
-          <!-- Operational data -->
+          <!-- Operational Data -->
           <g filter="url(#shadowSoft)">
-            <rect x="260" y="350" rx="24" ry="24" width="260" height="100" fill="url(#boxFill)" stroke="#cbd5e1" stroke-width="2"/>
-            <text x="390" y="386" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Operational Data</text>
-            <text x="390" y="412" text-anchor="middle" font-size="12" fill="#475569">Amazon S3 · RDS · Logs · Files · App Data</text>
-
-            <!-- AWS badge -->
-            <rect x="350" y="424" rx="14" ry="14" width="80" height="24" fill="url(#awsFill)" stroke="#fdba74"/>
-            <text x="390" y="440" text-anchor="middle" font-size="11" font-weight="700" fill="#9a3412">AWS DATA</text>
+            <rect x="250" y="286" rx="24" ry="24" width="280" height="102" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"/>
+            <text x="390" y="326" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Operational Data</text>
+            <text x="390" y="352" text-anchor="middle" font-size="12" fill="#52637a">Amazon S3 · RDS · Logs · Files · App Data</text>
+            <rect x="348" y="358" rx="14" ry="14" width="84" height="26" fill="url(#awsFill)" stroke="#f2a14a"/>
+            <text x="390" y="375" text-anchor="middle" font-size="11" font-weight="700" fill="#9a3412">AWS DATA</text>
           </g>
 
-          <!-- Knowledge base -->
+          <!-- Knowledge Base -->
           <g filter="url(#shadowSoft)">
-            <rect x="610" y="350" rx="24" ry="24" width="310" height="100" fill="url(#boxFill)" stroke="#cbd5e1" stroke-width="2"/>
-            <text x="765" y="384" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Knowledge Base / Vector Store</text>
-            <text x="765" y="410" text-anchor="middle" font-size="12" fill="#475569">Embeddings · Documents · Retrieval · Semantic Search</text>
-
-            <!-- AWS badge -->
-            <rect x="724" y="424" rx="14" ry="14" width="82" height="24" fill="url(#awsFill)" stroke="#fdba74"/>
-            <text x="765" y="440" text-anchor="middle" font-size="11" font-weight="700" fill="#9a3412">AWS RAG</text>
-          </g>
-
-          <!-- Supporting infra row -->
-          <g filter="url(#shadowSoft)">
-            <rect x="120" y="470" rx="18" ry="18" width="180" height="42" fill="#ffffff" stroke="#cbd5e1"/>
-            <text x="210" y="496" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">Amazon API Gateway / Lambda</text>
-          </g>
-
-          <g filter="url(#shadowSoft)">
-            <rect x="340" y="470" rx="18" ry="18" width="170" height="42" fill="#ffffff" stroke="#cbd5e1"/>
-            <text x="425" y="496" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">Amazon SageMaker</text>
-          </g>
-
-          <g filter="url(#shadowSoft)">
-            <rect x="550" y="470" rx="18" ry="18" width="170" height="42" fill="#ffffff" stroke="#cbd5e1"/>
-            <text x="635" y="496" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">AWS Trainium</text>
-          </g>
-
-          <g filter="url(#shadowSoft)">
-            <rect x="760" y="470" rx="18" ry="18" width="170" height="42" fill="#ffffff" stroke="#cbd5e1"/>
-            <text x="845" y="496" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">AWS Inferentia</text>
-          </g>
-
-          <g filter="url(#shadowSoft)">
-            <rect x="970" y="470" rx="18" ry="18" width="120" height="42" fill="#ffffff" stroke="#cbd5e1"/>
-            <text x="1030" y="496" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">CloudWatch</text>
+            <rect x="620" y="286" rx="24" ry="24" width="300" height="102" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"/>
+            <text x="770" y="324" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Knowledge Base / Vector Store</text>
+            <text x="770" y="350" text-anchor="middle" font-size="12" fill="#52637a">Embeddings · Documents · Retrieval · Semantic Search</text>
+            <rect x="726" y="358" rx="14" ry="14" width="88" height="26" fill="url(#awsFill)" stroke="#f2a14a"/>
+            <text x="770" y="375" text-anchor="middle" font-size="11" font-weight="700" fill="#9a3412">AWS RAG</text>
           </g>
 
           <!-- Down arrows -->
-          <line x1="420" y1="262" x2="420" y2="350" stroke="#94a3b8" stroke-width="4" marker-end="url(#arrowHead)"/>
-          <line x1="715" y1="262" x2="715" y2="350" stroke="#94a3b8" stroke-width="4" marker-end="url(#arrowHead)"/>
+          <line x1="420" y1="216" x2="420" y2="286" stroke="#8ea0b8" stroke-width="3" marker-end="url(#arrowHead)"/>
+          <line x1="715" y1="216" x2="715" y2="286" stroke="#8ea0b8" stroke-width="3" marker-end="url(#arrowHead)"/>
 
-          <!-- Side connectors -->
-          <path d="M520 400 C560 400, 575 400, 610 400" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 6"/>
+          <!-- Connector between lower boxes -->
+          <path d="M530 337 C565 337, 585 337, 620 337" fill="none" stroke="#c6d3e3" stroke-width="2" stroke-dasharray="6 6"/>
+
+          <!-- Supporting services band -->
+          <g filter="url(#shadowSoft)">
+            <rect x="86" y="420" rx="24" ry="24" width="1028" height="68" fill="#f5f9fc" stroke="#d5e1ec"/>
+          </g>
+          <text x="600" y="441" text-anchor="middle" font-size="12" font-weight="700" letter-spacing="1.5" fill="#64748b">
+            SUPPORTING AWS SERVICES
+          </text>
+
+          <g filter="url(#shadowSoft)">
+            <rect x="104" y="450" rx="18" ry="18" width="185" height="30" fill="#ffffff" stroke="#c7d4e2"/>
+            <text x="196" y="470" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">API Gateway / Lambda</text>
+          </g>
+
+          <g filter="url(#shadowSoft)">
+            <rect x="318" y="450" rx="18" ry="18" width="180" height="30" fill="#ffffff" stroke="#c7d4e2"/>
+            <text x="408" y="470" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">Amazon SageMaker</text>
+          </g>
+
+          <g filter="url(#shadowSoft)">
+            <rect x="528" y="450" rx="18" ry="18" width="170" height="30" fill="#ffffff" stroke="#c7d4e2"/>
+            <text x="613" y="470" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">AWS Trainium</text>
+          </g>
+
+          <g filter="url(#shadowSoft)">
+            <rect x="724" y="450" rx="18" ry="18" width="170" height="30" fill="#ffffff" stroke="#c7d4e2"/>
+            <text x="809" y="470" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">AWS Inferentia</text>
+          </g>
+
+          <g filter="url(#shadowSoft)">
+            <rect x="922" y="450" rx="18" ry="18" width="150" height="30" fill="#ffffff" stroke="#c7d4e2"/>
+            <text x="997" y="470" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">CloudWatch</text>
+          </g>
 
         </svg>
       </div>

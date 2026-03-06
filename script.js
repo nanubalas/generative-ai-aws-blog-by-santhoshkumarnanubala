@@ -30,7 +30,7 @@ const posts = [
           <line x1="400" y1="165" x2="490" y2="165" stroke="#94a3b8" stroke-width="3"></line>
           <polygon points="490,165 480,159 480,171" fill="#94a3b8"></polygon>
 
-          <rect x="490" y="130" rx="18" ry="18" width="170" height="70" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
+          <rect x="490" y="130" rx="18" ry="18" width="180" height="70" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
           <text x="575" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Prompt / Orchestration</text>
           <text x="575" y="178" text-anchor="middle" font-size="12" fill="#475569">Routing, Guardrails, RAG</text>
 

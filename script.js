@@ -61,7 +61,7 @@ const architectureDiagram = `
 
       <!-- Foundation Model -->
       <g filter="url(#shadowSoft)">
-        <rect x="1270" y="140" rx="22" ry="22" width="320" height="96" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"></rect>
+        <rect x="1270" y="140" rx="22" ry="22" width="300" height="96" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"></rect>
         <rect x="1305" y="159" rx="10" ry="10" width="38" height="30" fill="#f5f3ff" stroke="#ddd6fe"></rect>
         <path d="M1313 182 L1320 166 L1327 182 L1334 166" stroke="#7c3aed" stroke-width="2" fill="none"></path>
         <text x="1355" y="174" font-size="18" font-weight="700" fill="#0f172a">Foundation Model</text>

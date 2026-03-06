@@ -38,10 +38,8 @@ const posts = [
             </marker>
           </defs>
 
-          <!-- Canvas -->
           <rect x="14" y="14" rx="30" ry="30" width="1172" height="492" fill="#edf3f8" stroke="#d7e2ee"/>
 
-          <!-- Title -->
           <text x="600" y="48" text-anchor="middle" font-size="22" font-weight="700" fill="#0f172a">
             Generative AI Application Architecture on AWS
           </text>
@@ -49,24 +47,23 @@ const posts = [
             Retrieval-augmented orchestration with Bedrock, enterprise data, and AWS-managed infrastructure
           </text>
 
-          <!-- Top row -->
           <!-- Users -->
           <g filter="url(#shadowSoft)">
             <rect x="56" y="124" rx="24" ry="24" width="190" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"/>
             <circle cx="104" cy="161" r="18" fill="#eef6ff" stroke="#bfd8ff"/>
             <circle cx="104" cy="155" r="4" fill="#2563eb"/>
             <path d="M96 170 q8-14 16 0" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
-            <text x="156" y="166" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Users</text>
-            <text x="156" y="190" text-anchor="middle" font-size="12" fill="#52637a">Web · Mobile · Internal Teams</text>
+            <text x="140" y="157" font-size="18" font-weight="700" fill="#0f172a">Users</text>
+            <text x="140" y="183" font-size="12" fill="#52637a">Web · Mobile · Internal Teams</text>
           </g>
 
           <!-- Application Layer -->
           <g filter="url(#shadowSoft)">
             <rect x="300" y="124" rx="24" ry="24" width="220" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"/>
-            <rect x="334" y="144" rx="10" ry="10" width="36" height="28" fill="#ecfeff" stroke="#a5f3fc"/>
-            <rect x="344" y="151" rx="4" ry="4" width="16" height="14" fill="#0891b2"/>
-            <text x="420" y="164" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Application Layer</text>
-            <text x="420" y="190" text-anchor="middle" font-size="12" fill="#52637a">Frontend · API · Auth · Business Logic</text>
+            <rect x="330" y="144" rx="10" ry="10" width="36" height="28" fill="#ecfeff" stroke="#a5f3fc"/>
+            <rect x="340" y="151" rx="4" ry="4" width="16" height="14" fill="#0891b2"/>
+            <text x="380" y="157" font-size="18" font-weight="700" fill="#0f172a">Application Layer</text>
+            <text x="380" y="183" font-size="12" fill="#52637a">Frontend · API · Auth · Business Logic</text>
           </g>
 
           <!-- Prompt / Orchestration -->
@@ -74,17 +71,17 @@ const posts = [
             <rect x="574" y="124" rx="24" ry="24" width="282" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"/>
             <circle cx="620" cy="160" r="17" fill="#fff7ed" stroke="#fdba74"/>
             <path d="M612 160 h16 M620 152 v16" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
-            <text x="724" y="162" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Prompt / Orchestration</text>
-            <text x="724" y="189" text-anchor="middle" font-size="12" fill="#52637a">Prompt Routing · Guardrails · RAG · Tools</text>
+            <text x="646" y="157" font-size="18" font-weight="700" fill="#0f172a">Prompt / Orchestration</text>
+            <text x="646" y="183" font-size="12" fill="#52637a">Prompt Routing · Guardrails · RAG · Tools</text>
           </g>
 
           <!-- Foundation Model -->
           <g filter="url(#shadowSoft)">
             <rect x="910" y="124" rx="24" ry="24" width="232" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"/>
-            <rect x="944" y="143" rx="10" ry="10" width="38" height="30" fill="#f5f3ff" stroke="#ddd6fe"/>
-            <path d="M952 166 L959 150 L966 166 L973 150" stroke="#7c3aed" stroke-width="2" fill="none"/>
-            <text x="1036" y="162" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Foundation Model</text>
-            <text x="1036" y="189" text-anchor="middle" font-size="12" fill="#52637a">Amazon Bedrock · FM APIs</text>
+            <rect x="940" y="143" rx="10" ry="10" width="38" height="30" fill="#f5f3ff" stroke="#ddd6fe"/>
+            <path d="M948 166 L955 150 L962 166 L969 150" stroke="#7c3aed" stroke-width="2" fill="none"/>
+            <text x="990" y="157" font-size="18" font-weight="700" fill="#0f172a">Foundation Model</text>
+            <text x="990" y="183" font-size="12" fill="#52637a">Amazon Bedrock · FM APIs</text>
           </g>
 
           <!-- Top arrows -->
@@ -93,7 +90,6 @@ const posts = [
           <line x1="856" y1="170" x2="910" y2="170" stroke="#8ea0b8" stroke-width="3" marker-end="url(#arrowHead)"/>
 
           <!-- Lower row -->
-          <!-- Operational Data -->
           <g filter="url(#shadowSoft)">
             <rect x="250" y="286" rx="24" ry="24" width="280" height="102" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"/>
             <text x="390" y="326" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Operational Data</text>
@@ -102,7 +98,6 @@ const posts = [
             <text x="390" y="375" text-anchor="middle" font-size="11" font-weight="700" fill="#9a3412">AWS DATA</text>
           </g>
 
-          <!-- Knowledge Base -->
           <g filter="url(#shadowSoft)">
             <rect x="620" y="286" rx="24" ry="24" width="300" height="102" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"/>
             <text x="770" y="324" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Knowledge Base / Vector Store</text>
@@ -111,14 +106,12 @@ const posts = [
             <text x="770" y="375" text-anchor="middle" font-size="11" font-weight="700" fill="#9a3412">AWS RAG</text>
           </g>
 
-          <!-- Down arrows -->
           <line x1="420" y1="216" x2="420" y2="286" stroke="#8ea0b8" stroke-width="3" marker-end="url(#arrowHead)"/>
           <line x1="715" y1="216" x2="715" y2="286" stroke="#8ea0b8" stroke-width="3" marker-end="url(#arrowHead)"/>
 
-          <!-- Connector between lower boxes -->
           <path d="M530 337 C565 337, 585 337, 620 337" fill="none" stroke="#c6d3e3" stroke-width="2" stroke-dasharray="6 6"/>
 
-          <!-- Supporting services band -->
+          <!-- Supporting services -->
           <g filter="url(#shadowSoft)">
             <rect x="86" y="420" rx="24" ry="24" width="1028" height="68" fill="#f5f9fc" stroke="#d5e1ec"/>
           </g>
@@ -332,10 +325,10 @@ function renderArticle(slug) {
   const post = posts.find((p) => p.slug === slug) || posts[0];
   categoryEl.textContent = post.category;
   titleEl.textContent = post.title;
-  metaEl.textContent = `${post.date} · ${post.readTime}`;
+  metaEl.textContent = \`\${post.date} · \${post.readTime}\`;
   contentEl.innerHTML = post.content;
   renderPostList(post.slug);
-  window.history.replaceState(null, "", `#${post.slug}`);
+  window.history.replaceState(null, "", \`#\${post.slug}\`);
 }
 
 const slugFromHash = window.location.hash.replace("#", "");

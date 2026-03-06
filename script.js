@@ -30,21 +30,21 @@ const posts = [
           <line x1="400" y1="165" x2="490" y2="165" stroke="#94a3b8" stroke-width="3"></line>
           <polygon points="490,165 480,159 480,171" fill="#94a3b8"></polygon>
 
-          <rect x="490" y="130" rx="18" ry="18" width="180" height="70" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
+          <rect x="490" y="130" rx="18" ry="18" width="220" height="70" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
           <text x="575" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Prompt / Orchestration</text>
           <text x="575" y="178" text-anchor="middle" font-size="12" fill="#475569">Routing, Guardrails, RAG</text>
 
           <line x1="660" y1="165" x2="750" y2="165" stroke="#94a3b8" stroke-width="3"></line>
           <polygon points="750,165 740,159 740,171" fill="#94a3b8"></polygon>
 
-          <rect x="750" y="130" rx="18" ry="18" width="140" height="70" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
+          <rect x="750" y="130" rx="18" ry="18" width="160" height="70" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
           <text x="820" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Foundation Model</text>
           <text x="820" y="178" text-anchor="middle" font-size="12" fill="#475569">Bedrock / Custom Model</text>
 
           <line x1="575" y1="200" x2="575" y2="255" stroke="#94a3b8" stroke-width="3"></line>
           <polygon points="575,255 569,245 581,245" fill="#94a3b8"></polygon>
 
-          <rect x="485" y="255" rx="18" ry="18" width="180" height="60" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
+          <rect x="485" y="255" rx="18" ry="18" width="250" height="60" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
           <text x="575" y="279" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Knowledge Base / Vector Store</text>
           <text x="575" y="298" text-anchor="middle" font-size="12" fill="#475569">Docs, embeddings, retrieval</text>
 

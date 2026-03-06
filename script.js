@@ -21,7 +21,7 @@ const architectureDiagram = `
         </marker>
       </defs>
 
-      <rect x="14" y="14" rx="28" ry="28" width="1542" height="532" fill="#edf3f8" stroke="#d7e2ee"></rect>
+      <rect x="14" y="14" rx="28" ry="28" width="1552" height="532" fill="#edf3f8" stroke="#d7e2ee"></rect>
 
       <text x="780" y="52" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a">
         Generative AI Application Architecture on AWS

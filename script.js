@@ -31,7 +31,7 @@ const architectureDiagram = `
       </text>
 
       <g filter="url(#shadowSoft)">
-        <rect x="56" y="124" rx="22" ry="22" width="190" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"></rect>
+        <rect x="56" y="124" rx="22" ry="22" width="280" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"></rect>
         <circle cx="104" cy="161" r="18" fill="#eef6ff" stroke="#bfd8ff"></circle>
         <circle cx="104" cy="155" r="4" fill="#2563eb"></circle>
         <path d="M96 170 q8-14 16 0" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round"></path>
@@ -40,7 +40,7 @@ const architectureDiagram = `
       </g>
 
       <g filter="url(#shadowSoft)">
-        <rect x="300" y="124" rx="22" ry="22" width="220" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"></rect>
+        <rect x="300" y="124" rx="22" ry="22" width="320" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"></rect>
         <rect x="330" y="144" rx="10" ry="10" width="36" height="28" fill="#ecfeff" stroke="#a5f3fc"></rect>
         <rect x="340" y="151" rx="4" ry="4" width="16" height="14" fill="#0891b2"></rect>
         <text x="380" y="157" font-size="18" font-weight="700" fill="#0f172a">Application Layer</text>
@@ -48,7 +48,7 @@ const architectureDiagram = `
       </g>
 
       <g filter="url(#shadowSoft)">
-        <rect x="574" y="124" rx="22" ry="22" width="282" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"></rect>
+        <rect x="574" y="124" rx="22" ry="22" width="320" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"></rect>
         <circle cx="620" cy="160" r="17" fill="#fff7ed" stroke="#fdba74"></circle>
         <path d="M612 160 h16 M620 152 v16" stroke="#ea580c" stroke-width="2" stroke-linecap="round"></path>
         <text x="646" y="157" font-size="18" font-weight="700" fill="#0f172a">Prompt / Orchestration</text>
@@ -56,7 +56,7 @@ const architectureDiagram = `
       </g>
 
       <g filter="url(#shadowSoft)">
-        <rect x="910" y="124" rx="22" ry="22" width="232" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"></rect>
+        <rect x="910" y="124" rx="22" ry="22" width="260" height="92" fill="url(#boxFill)" stroke="#b8c6d8" stroke-width="2"></rect>
         <rect x="940" y="143" rx="10" ry="10" width="38" height="30" fill="#f5f3ff" stroke="#ddd6fe"></rect>
         <path d="M948 166 L955 150 L962 166 L969 150" stroke="#7c3aed" stroke-width="2" fill="none"></path>
         <text x="990" y="157" font-size="18" font-weight="700" fill="#0f172a">Foundation Model</text>

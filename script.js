@@ -15,45 +15,67 @@ const posts = [
       <h2>AI Architecture Diagram</h2>
       <p>A simple reference architecture for a generative AI application on AWS usually includes a user-facing app, prompt orchestration, model access, retrieval, operational storage, and monitoring.</p>
       <div class="diagram-shell">
-        <svg viewBox="0 0 920 340" style="width:100%;min-width:760px;height:auto;">
-          <rect x="30" y="130" rx="18" ry="18" width="130" height="70" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
-          <text x="95" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Users</text>
-          <text x="95" y="178" text-anchor="middle" font-size="12" fill="#475569">Web / Mobile / Internal</text>
-
-          <line x1="160" y1="165" x2="250" y2="165" stroke="#94a3b8" stroke-width="3"></line>
-          <polygon points="250,165 240,159 240,171" fill="#94a3b8"></polygon>
-
-          <rect x="250" y="130" rx="18" ry="18" width="150" height="70" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
-          <text x="325" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">App Layer</text>
-          <text x="325" y="178" text-anchor="middle" font-size="12" fill="#475569">Frontend + API</text>
-
-          <line x1="400" y1="165" x2="490" y2="165" stroke="#94a3b8" stroke-width="3"></line>
-          <polygon points="490,165 480,159 480,171" fill="#94a3b8"></polygon>
-
-          <rect x="490" y="130" rx="18" ry="18" width="220" height="70" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
-          <text x="575" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Prompt / Orchestration</text>
-          <text x="575" y="178" text-anchor="middle" font-size="12" fill="#475569">Routing, Guardrails, RAG</text>
-
-          <line x1="660" y1="165" x2="750" y2="165" stroke="#94a3b8" stroke-width="3"></line>
-          <polygon points="750,165 740,159 740,171" fill="#94a3b8"></polygon>
-
-          <rect x="750" y="130" rx="18" ry="18" width="160" height="70" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
-          <text x="820" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Foundation Model</text>
-          <text x="820" y="178" text-anchor="middle" font-size="12" fill="#475569">Bedrock / Custom Model</text>
-
-          <line x1="575" y1="200" x2="575" y2="255" stroke="#94a3b8" stroke-width="3"></line>
-          <polygon points="575,255 569,245 581,245" fill="#94a3b8"></polygon>
-
-          <rect x="485" y="255" rx="18" ry="18" width="250" height="60" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
-          <text x="575" y="279" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Knowledge Base / Vector Store</text>
-          <text x="575" y="298" text-anchor="middle" font-size="12" fill="#475569">Docs, embeddings, retrieval</text>
-
-          <line x1="325" y1="200" x2="325" y2="255" stroke="#94a3b8" stroke-width="3"></line>
-          <polygon points="325,255 319,245 331,245" fill="#94a3b8"></polygon>
-
-          <rect x="225" y="255" rx="18" ry="18" width="200" height="60" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
-          <text x="325" y="279" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Operational Data</text>
-          <text x="325" y="298" text-anchor="middle" font-size="12" fill="#475569">S3, databases, logs, files</text>
+        <svg viewBox="0 0 980 360" style="width:100%;min-width:820px;height:auto;">
+      
+          <!-- Users -->
+          <rect x="30" y="130" rx="20" ry="20" width="150" height="80" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
+          <text x="105" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Users</text>
+          <text x="105" y="180" text-anchor="middle" font-size="11" fill="#475569">Web / Mobile / Internal</text>
+      
+          <!-- Arrow 1 -->
+          <line x1="180" y1="170" x2="250" y2="170" stroke="#94a3b8" stroke-width="3"></line>
+          <polygon points="250,170 240,164 240,176" fill="#94a3b8"></polygon>
+      
+          <!-- App Layer -->
+          <rect x="250" y="130" rx="20" ry="20" width="170" height="80" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
+          <text x="335" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">App Layer</text>
+          <text x="335" y="180" text-anchor="middle" font-size="11" fill="#475569">Frontend + API</text>
+      
+          <!-- Arrow 2 -->
+          <line x1="420" y1="170" x2="490" y2="170" stroke="#94a3b8" stroke-width="3"></line>
+          <polygon points="490,170 480,164 480,176" fill="#94a3b8"></polygon>
+      
+          <!-- Prompt / Orchestration -->
+          <rect x="490" y="130" rx="20" ry="20" width="220" height="80" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
+          <text x="600" y="154" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">
+            <tspan x="600" dy="0">Prompt /</tspan>
+            <tspan x="600" dy="18">Orchestration</tspan>
+          </text>
+          <text x="600" y="188" text-anchor="middle" font-size="11" fill="#475569">Routing, Guardrails, RAG</text>
+      
+          <!-- Arrow 3 -->
+          <line x1="710" y1="170" x2="780" y2="170" stroke="#94a3b8" stroke-width="3"></line>
+          <polygon points="780,170 770,164 770,176" fill="#94a3b8"></polygon>
+      
+          <!-- Foundation Model -->
+          <rect x="780" y="130" rx="20" ry="20" width="170" height="80" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
+          <text x="865" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">
+            <tspan x="865" dy="0">Foundation</tspan>
+            <tspan x="865" dy="18">Model</tspan>
+          </text>
+          <text x="865" y="188" text-anchor="middle" font-size="11" fill="#475569">Bedrock / Custom Model</text>
+      
+          <!-- Down Arrow from Prompt -->
+          <line x1="600" y1="210" x2="600" y2="265" stroke="#94a3b8" stroke-width="3"></line>
+          <polygon points="600,265 594,255 606,255" fill="#94a3b8"></polygon>
+      
+          <!-- Knowledge Base / Vector Store -->
+          <rect x="470" y="265" rx="20" ry="20" width="260" height="70" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
+          <text x="600" y="291" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">
+            <tspan x="600" dy="0">Knowledge Base /</tspan>
+            <tspan x="600" dy="18">Vector Store</tspan>
+          </text>
+          <text x="600" y="320" text-anchor="middle" font-size="11" fill="#475569">Docs, embeddings, retrieval</text>
+      
+          <!-- Down Arrow from App -->
+          <line x1="335" y1="210" x2="335" y2="265" stroke="#94a3b8" stroke-width="3"></line>
+          <polygon points="335,265 329,255 341,255" fill="#94a3b8"></polygon>
+      
+          <!-- Operational Data -->
+          <rect x="205" y="265" rx="20" ry="20" width="220" height="70" fill="white" stroke="#cbd5e1" stroke-width="2"></rect>
+          <text x="315" y="291" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Operational Data</text>
+          <text x="315" y="320" text-anchor="middle" font-size="11" fill="#475569">S3, databases, logs, files</text>
+      
         </svg>
       </div>
 

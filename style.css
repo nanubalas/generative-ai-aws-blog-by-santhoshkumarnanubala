@@ -493,11 +493,21 @@ code {
   color: white;
 }
 
+.contact a {
+  color: #93c5fd;
+  font-weight: 600;
+}
+
+.contact a:hover {
+  color: #bfdbfe;
+}
+
 .footer {
   text-align: center;
   color: var(--muted);
   font-size: 14px;
   padding: 20px 0 40px;
+  min-height: 10px;
 }
 
 @media (max-width: 980px) {
